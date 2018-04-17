@@ -1,0 +1,70 @@
+/*
+* @Author: JimmyLLLL
+* @Date:   2018-04-16 21:58:13
+* @Last Modified by:   JimmyLLLL
+* @Last Modified time: 2018-04-17 17:12:01
+*/
+#arrangeBox input
+{
+	vertical-align:middle; height:16px; width:16px;
+	position: absolute;
+	top: 11px;
+}
+#arrangeBox
+{
+	position: absolute;
+	top: 558px;
+	left: 803px;
+	width: 300px;
+	display: inline-block;
+}
+#boxRadioW1
+{
+	position: absolute;
+	left: -95px;
+	vertical-align: text-bottom;
+    margin-bottom: 2px;
+}
+#boxRadioW2
+{
+	position: absolute;
+	left: -25px;
+	vertical-align: text-bottom;
+    margin-bottom: 2px;
+}
+#boxRadioW3
+{
+	vertical-align: text-bottom;
+    margin-bottom: 2px;
+	position: absolute;
+	left: 114px;
+}
+#boxRadioW4
+{
+	vertical-align: text-bottom;
+    margin-bottom: 2px;
+	position: absolute;
+	left: 44px;
+
+}
+.label1
+{
+	position: absolute;
+	top:8px;
+	left: 27px;
+	width: 64px;
+	cursor: pointer;
+}
+#Updown
+{
+	position: absolute;
+	top: 563px;
+	left: 1029px;
+	padding: 5px;
+	background-color: red;
+	color: white;
+	border-radius: 15px;
+	border:none;
+	outline: none;
+	cursor: pointer;
+}

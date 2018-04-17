@@ -1,0 +1,23 @@
+/*
+* @Author: JimmyLLLL
+* @Date:   2018-04-10 23:24:07
+* @Last Modified by:   JimmyLLLL
+* @Last Modified time: 2018-04-17 16:57:17
+*/
+#bottom
+{
+	position: absolute;
+	height: 120px;
+	top: 630px;
+	background-color: black;
+	text-align: center;
+	width: 1443px;
+}
+#bottomWord
+{
+	position: relative;
+	color: white;
+	font-size: 18px;
+	line-height: 120px;
+
+}

@@ -1,0 +1,86 @@
+/*
+* @Author: JimmyLLLL
+* @Date:   2018-04-11 23:53:42
+* @Last Modified by:   JimmyLLLL
+* @Last Modified time: 2018-04-17 16:17:33
+*/
+/*新增partner的功能按钮*/
+#showaddInfo
+{
+	position: absolute;
+	left: 0px;
+	height: 0px;
+	top: 0px;
+	color: white;
+	width: 30px;
+	background-color: red;
+	z-index: 4;
+
+}
+
+
+
+
+#addInfo
+{
+	border-radius: 15px;
+    display: none;	
+	position: absolute;
+	background: -webkit-linear-gradient(red, #333333); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#333333,red); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#333333,red); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#333333, red); /* 标准的语法 */
+	left: 1025px;
+	top: 191px;
+	height: 354px;
+	width: 325px;
+}
+.addInClass
+{
+	color: black;
+	top: 38px;
+	position: relative;
+	margin-top: 10px;
+	width: 280px;
+	left: 14px;
+	font-size: 20px;
+	border-radius: 10px;
+}
+#addInfoBtn
+{
+	position: relative;
+	top: 70px;
+	left: 135px;
+	padding: 6px;
+	background-color: red;
+	border: none;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	z-index: 3;
+	border-radius: 10px;
+}
+#addInfoBtn:hover
+{
+	background-color: green;
+}
+.addInClass::-webkit-input-placeholder{ /*WebKit browsers*/
+font-size: 20px;
+color: #bdbdbd;
+}
+.addInClass::-moz-input-placeholder{ /*Mozilla Firefox*/
+font-size: 20px;
+color: #bdbdbd;
+}
+.addInClass::-ms-input-placeholder{ /*Internet Explorer*/ 
+font-size: 20px;
+color: #bdbdbd;
+}
+#addInfoP
+{
+	font-size: 24px;
+	color: white;
+	position: absolute;
+	left: 95px;
+	top: 11px;
+}

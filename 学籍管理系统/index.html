@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>学生学籍管理系统</title>
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.pagination.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normal.css">
+	<link rel="stylesheet" type="text/css" href="css/pagination.css">
+	<link rel="stylesheet" type="text/css" href="css/top.css">
+	<link rel="stylesheet" type="text/css" href="css/bottom.css">
+	<link rel="stylesheet" type="text/css" href="css/delete.css">
+	<link rel="stylesheet" type="text/css" href="css/addInfo.css">
+	<link rel="stylesheet" type="text/css" href="css/arrangeBox.css">
+</head>
+<body>
+<div id="top">
+	<p id="topLogo">学生学籍管理系统</p>
+	<ul id="top_Ul">
+			<li id="li1">
+				<a>编辑</a>
+			</li>
+			<div id="toggleDiv">
+	            <a class="toggleA" id="showDelete">删除信息</a><br>
+	            <a class="toggleA" id="addNew">新增信息</a>
+                </div>
+		</ul>
+	
+</div>
+<p id="serveData"> ● 数据</p>
+<div id="search">
+	<input type="text" name="" id="searchText" placeholder="输入编号以删除信息">
+	<button id="searchButton">Delete</button>
+</div>
+<table id="inforTable" border="1">
+<tr>
+  <th>编号</th>
+  <th>学号</th>
+  <th>姓名</th>
+  <th>年龄</th>
+  <th>性别</th>
+  <th>分数</th>
+  <th>入学年份</th>
+</tr>
+</table>
+<div id="addInfo">
+	<p id="addInfoP">新增Partner</p>
+	<input type="text" name="" placeholder="请输入学号" class="addInClass" id="schoolNum"><br>
+	<input type="text" name="" placeholder="请输入姓名" class="addInClass" id="name"><br>
+	<input type="text" name="" placeholder="请输入年龄" class="addInClass" id="age"><br>
+	<input type="text" name="" placeholder="请输入性别" class="addInClass" id="sex"><br>
+	<input type="text" name="" placeholder="请输入分数" class="addInClass" id="score"><br>
+	<input type="text" name="" placeholder="请输入入学年份" class="addInClass" id="schoolYear">
+	<button id="addInfoBtn">提交</button>
+</div>
+<div class="M-box" id="pageButton"></div>
+<div id="arrangeBox">
+	<div id="boxRadioW1"><input type="radio" name="same" value="0" id="boxRadio1" checked="checked"><label class="label1" for="boxRadio1">编号</label></div>
+	 <div id="boxRadioW2"><input type="radio" name="same" value="3" id="boxRadio2" ><label class="label1" for="boxRadio2">年龄</label></div>
+	 <div id="boxRadioW4"><input type="radio" name="same" value="5" id="boxRadio4" ><label class="label1" for="boxRadio4">分数</label></div>
+	<div id="boxRadioW3"><input type="radio" name="same" value="6" id="boxRadio3" ><label class="label1" for="boxRadio3">入学年份</label></div>
+</div>
+<button id="Updown">降序↓</button>
+<div id="bottom"><p id="bottomWord">深大荔枝</p></div>
+</body>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="js/enterBind.js"></script>
+<script type="text/javascript" src="js/edit.js"></script>
+<script type="text/javascript" src="js/arrangeBox.js"></script>
+
+</html>

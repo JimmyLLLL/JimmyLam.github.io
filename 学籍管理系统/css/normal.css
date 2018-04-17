@@ -1,0 +1,48 @@
+/*
+* @Author: JimmyLLLL
+* @Date:   2018-04-09 20:36:19
+* @Last Modified by:   JimmyLLLL
+* @Last Modified time: 2018-04-17 17:05:43
+*/
+/*包含一些通用样式，以及一些简单的单句样式*/
+*
+{
+	padding: 0px;
+	margin:0px;
+}
+body
+{
+	padding: 0px;
+	margin:0px;
+}
+
+table
+{
+	table-layout:fixed;
+	 border-collapse:collapse;
+	 width:1123px;
+	 position: absolute;
+	 left: 90px;
+	 top: 192px;
+	 transition: width 0.3s;
+	 height: 355px;
+
+}
+tr td
+{
+	text-align: center;
+	padding: 5px 0px;
+}
+tr:nth-child(odd)
+{
+	background-color: #eeeeee;
+}
+#serveData
+{
+	display: inline-block;
+	position: relative;
+	top: 50px;
+	left: 90px;
+	color: black;
+	font-size: 40px;
+}
