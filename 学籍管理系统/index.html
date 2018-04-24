@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>学生学籍管理系统</title>
+	<script type="text/javascript" src="js/ieClassName.js"></script>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.pagination.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/normal.css">
 	<link rel="stylesheet" type="text/css" href="css/pagination.css">
 	<link rel="stylesheet" type="text/css" href="css/top.css">
 	<link rel="stylesheet" type="text/css" href="css/bottom.css">
-	<link rel="stylesheet" type="text/css" href="css/delete.css">
 	<link rel="stylesheet" type="text/css" href="css/addInfo.css">
 	<link rel="stylesheet" type="text/css" href="css/arrangeBox.css">
 </head>
-<body>
+<img id="bgp" src="img/bgp5.jpg">
 <div id="top">
 	<p id="topLogo">学生学籍管理系统</p>
 	<ul id="top_Ul">
@@ -21,30 +21,116 @@
 				<a>编辑</a>
 			</li>
 			<div id="toggleDiv">
-	            <a class="toggleA" id="showDelete">删除信息</a><br>
 	            <a class="toggleA" id="addNew">新增信息</a>
                 </div>
 		</ul>
 	
 </div>
 <p id="serveData"> ● 数据</p>
-<div id="search">
-	<input type="text" name="" id="searchText" placeholder="输入编号以删除信息">
-	<button id="searchButton">Delete</button>
-</div>
-<table id="inforTable" border="1">
+<table id="inforTable" frame="void" border="1" cellspacing="0">
 <tr>
-  <th>编号</th>
-  <th>学号</th>
+  <th value="0" class="thData">编号 ↓</th>
+  <th value="1" class="thData">学号 ↕</th>
   <th>姓名</th>
-  <th>年龄</th>
+  <th value="3" class="thData">年龄 ↕</th>
   <th>性别</th>
-  <th>分数</th>
-  <th>入学年份</th>
+  <th value="5" class="thData">分数 ↕</th>
+  <th value="6" class="thData">入学年份 ↕</th>
+</tr>
+<tr class="trToggle" id="refresh">
+  <td id="test0" class="tD"><span style="color:red" class="tdSpan">X</span><p class="trP"></p></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr class="trToggle">
+  <td id="test1" class="tD"><span style="color:red" class="tdSpan">X</span><p class="trP"></p></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr class="trToggle">
+  <td id="test2" class="tD"><span style="color:red" class="tdSpan">X</span><p class="trP"></p></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr class="trToggle">
+  <td id="test3" class="tD"><span style="color:red" class="tdSpan">X</span><p class="trP"></p></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr class="trToggle">
+  <td id="test4" class="tD"><span style="color:red" class="tdSpan">X</span><p class="trP"></p></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr class="trToggle">
+  <td id="test5" class="tD"><span style="color:red" class="tdSpan">X</span><p class="trP"></p></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr class="trToggle">
+  <td id="test6" class="tD"><span style="color:red" class="tdSpan">X</span><p class="trP"></p></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr class="trToggle">
+  <td id="test7" class="tD"><span style="color:red" class="tdSpan">X</span><p class="trP"></p></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr class="trToggle">
+  <td id="test8" class="tD"><span style="color:red" class="tdSpan">X</span><p class="trP"></p></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr class="trToggle">
+  <td id="test9" class="tD"><span style="color:red" class="tdSpan">X</span><p class="trP"></p></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
 </tr>
 </table>
 <div id="addInfo">
 	<p id="addInfoP">新增Partner</p>
+  <p id="deleteInfo">X</p>
 	<input type="text" name="" placeholder="请输入学号" class="addInClass" id="schoolNum"><br>
 	<input type="text" name="" placeholder="请输入姓名" class="addInClass" id="name"><br>
 	<input type="text" name="" placeholder="请输入年龄" class="addInClass" id="age"><br>
@@ -54,14 +140,7 @@
 	<button id="addInfoBtn">提交</button>
 </div>
 <div class="M-box" id="pageButton"></div>
-<div id="arrangeBox">
-	<div id="boxRadioW1"><input type="radio" name="same" value="0" id="boxRadio1" checked="checked"><label class="label1" for="boxRadio1">编号</label></div>
-	 <div id="boxRadioW2"><input type="radio" name="same" value="3" id="boxRadio2" ><label class="label1" for="boxRadio2">年龄</label></div>
-	 <div id="boxRadioW4"><input type="radio" name="same" value="5" id="boxRadio4" ><label class="label1" for="boxRadio4">分数</label></div>
-	<div id="boxRadioW3"><input type="radio" name="same" value="6" id="boxRadio3" ><label class="label1" for="boxRadio3">入学年份</label></div>
-</div>
-<button id="Updown">降序↓</button>
-<div id="bottom"><p id="bottomWord">深大荔枝</p></div>
+<div id="bottom"><p id="bottomWord">深大荔知</p></div>
 </body>
 <script type="text/javascript" src="js/ajax.js"></script>
 <script type="text/javascript" src="js/enterBind.js"></script>

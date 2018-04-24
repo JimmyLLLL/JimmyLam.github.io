@@ -2,18 +2,46 @@
 * @Author: JimmyLLLL
 * @Date:   2018-04-09 20:36:19
 * @Last Modified by:   JimmyLLLL
-* @Last Modified time: 2018-04-17 17:05:43
+* @Last Modified time: 2018-04-24 20:56:43
 */
 /*包含一些通用样式，以及一些简单的单句样式*/
+
+#deleteInfo
+{
+	position: absolute;
+	font-size: 23px;
+	left: 296px;
+	top: 11px;
+	z-index: 4;
+	color: red;
+	cursor: pointer;
+}
+
+
+#bgp
+{
+	z-index: -1;
+	height: 700px;
+	width: 1443px;
+	position: absolute;
+	
+}
+#firstTr
+{
+	position: absolute;
+	max-height: 10px;
+}
 *
 {
 	padding: 0px;
 	margin:0px;
+	font-family: Arial;
 }
 body
 {
 	padding: 0px;
 	margin:0px;
+	zoom:1.0;
 }
 
 table
@@ -26,23 +54,171 @@ table
 	 top: 192px;
 	 transition: width 0.3s;
 	 height: 355px;
-
 }
+
 tr td
 {
 	text-align: center;
 	padding: 5px 0px;
+	
 }
-tr:nth-child(odd)
+tr th
 {
-	background-color: #eeeeee;
+	color: white;
 }
+
+
 #serveData
 {
 	display: inline-block;
 	position: relative;
 	top: 50px;
 	left: 90px;
-	color: black;
+	color: #AAA;
 	font-size: 40px;
 }
+
+
+#top_Ul:hover #toggleDiv
+{
+	display: block;
+}
+
+#refresh
+{
+transition: background-color 0.5s;
+}
+
+
+
+.tD
+{
+	cursor: pointer;
+}
+.tdSpan
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	display: none;
+	transition: 0.3s;
+	
+}
+.trP
+{
+	display: inline-block;
+	top: 0px;
+	left: 0px;
+	transition: 0.3s;
+}
+
+#test0:hover p
+{
+	color: blue;
+	margin-left: 20px;
+}
+#test0:hover span
+{
+	display: inline;
+	margin-right: 10px;
+}
+
+#test1:hover p
+{
+	color: blue;
+	margin-left: 20px;
+}
+#test1:hover span
+{
+	display: inline;
+	margin-right: 10px;
+}
+
+#test2:hover p
+{
+	color: blue;
+	margin-left: 20px;
+}
+#test2:hover span
+{
+	display: inline;
+	margin-right: 10px;
+}
+
+#test3:hover p
+{
+	color: blue;
+	margin-left: 20px;
+}
+#test3:hover span
+{
+	display: inline;
+	margin-right: 10px;
+}
+
+#test4:hover p
+{
+	color: blue;
+	margin-left: 20px;
+}
+#test4:hover span
+{
+	display: inline;
+	margin-right: 10px;
+}
+
+#test5:hover p
+{
+	color: blue;
+	margin-left: 20px;
+}
+#test5:hover span
+{
+	display: inline;
+	margin-right: 10px;
+}
+
+#test6:hover p
+{
+	color: blue;
+	margin-left: 20px;
+}
+#test6:hover span
+{
+	display: inline;
+	margin-right: 10px;
+}
+
+#test7:hover p
+{
+	color: blue;
+	margin-left: 20px;
+}
+#test7:hover span
+{
+	display: inline;
+	margin-right: 10px;
+}
+
+#test8:hover p
+{
+	color: blue;
+	margin-left: 20px;
+}
+#test8:hover span
+{
+	display: inline;
+	margin-right: 10px;
+}
+
+#test9:hover p
+{
+	color: blue;
+	margin-left: 20px;
+}
+#test9:hover span
+{
+	display: inline;
+	margin-right: 10px;
+}
+

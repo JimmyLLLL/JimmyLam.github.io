@@ -2,8 +2,20 @@
 * @Author: JimmyLLLL
 * @Date:   2018-04-09 21:30:20
 * @Last Modified by:   JimmyLLLL
-* @Last Modified time: 2018-04-17 17:00:22
+* @Last Modified time: 2018-04-24 20:50:56
 */
+.trToggle
+{
+	color: white;
+}
+.trToggle td:nth-child(7)
+{
+	color: black;
+}
+.trToggle td:nth-child(6)
+{
+	color: black;
+}
 #top
 {
 	height: 75px;
@@ -39,10 +51,7 @@
 	background-color: #59af50;
 	color: white;
 }
-#top_Ul:hover #toggleDiv
-{
-	display: block;
-}
+
 #top_Ul
 {
 	left: 1135px;
@@ -53,7 +62,7 @@
 #toggleDiv
 {
     position: absolute;
-    height:60px;
+    height:20px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 10px;
@@ -89,5 +98,5 @@
 }
 #addNew
 {
-	top: 40px;
+	top: 0px;
 }

@@ -2,7 +2,7 @@
 * @Author: JimmyLLLL
 * @Date:   2018-04-11 23:53:42
 * @Last Modified by:   JimmyLLLL
-* @Last Modified time: 2018-04-17 16:17:33
+* @Last Modified time: 2018-04-20 11:04:18
 */
 /*新增partner的功能按钮*/
 #showaddInfo
@@ -26,10 +26,7 @@
 	border-radius: 15px;
     display: none;	
 	position: absolute;
-	background: -webkit-linear-gradient(red, #333333); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(#333333,red); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(#333333,red); /* Firefox 3.6 - 15 */
-  background: linear-gradient(#333333, red); /* 标准的语法 */
+	border: 1px solid white;
 	left: 1025px;
 	top: 191px;
 	height: 354px;
@@ -45,11 +42,13 @@
 	left: 14px;
 	font-size: 20px;
 	border-radius: 10px;
+	background-color: transparent;
+	border: 1px solid black;
 }
 #addInfoBtn
 {
 	position: relative;
-	top: 70px;
+	top: 86px;
 	left: 135px;
 	padding: 6px;
 	background-color: red;
@@ -66,20 +65,20 @@
 }
 .addInClass::-webkit-input-placeholder{ /*WebKit browsers*/
 font-size: 20px;
-color: #bdbdbd;
+color: white;
 }
 .addInClass::-moz-input-placeholder{ /*Mozilla Firefox*/
 font-size: 20px;
-color: #bdbdbd;
+color: white;
 }
 .addInClass::-ms-input-placeholder{ /*Internet Explorer*/ 
 font-size: 20px;
-color: #bdbdbd;
+color: white;
 }
 #addInfoP
 {
 	font-size: 24px;
-	color: white;
+	color: black;
 	position: absolute;
 	left: 95px;
 	top: 11px;
